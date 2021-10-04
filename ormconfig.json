@@ -4,5 +4,8 @@
   "port": 5432,
   "username": "rentx",
   "password": "rentx",
-  "database": "rentx"
+  "database": "rentx",
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
