@@ -26,6 +26,11 @@ class UsersRepository implements IUsersRepository {
 
     await this.repostiory.save(users);
   }
+
+  async findByEmail(email: string): Promise<User> {
+    const user = await this.repostiory.findOne({ where: { email } });
+    return user;
+  }
 }
 
 export { UsersRepository };
