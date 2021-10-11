@@ -7,8 +7,11 @@
 **RN**
 
 [x] Não deve ser possível cadastrar um carro com uma placa já existente.
+
 [x] Não deve ser possível alterar a placa de um carro já cadastrado.
+
 [x] O carro deve ser cadastrado  por padrão com disponibilidade.
+
 [x] O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 
@@ -17,8 +20,11 @@
 **RF**
 
 [ ] Deve ser possível listar todos os carros disponíveis.
+
 [ ] Deve ser possível listar todos os carros disponíveis pelo nome da categoria.
+
 [ ] Deve ser possível listar todos os carros disponíveis pelo nome da marca.
+
 [ ] Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 
 **RN**
@@ -47,6 +53,7 @@
 **RF**
 
 [ ] Deve ser possível cadastrar a imagem do carro.
+
 [ ] Deve ser possível listar todos os carros.
 
 **RNF**
@@ -56,6 +63,8 @@
 **RN**
 
 [ ] O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
+
+
 [ ] O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 
@@ -68,5 +77,7 @@
 **RN**
 
 [ ] O aluguel deve ter duração mínima de 24 hora.
+
 [ ] Não deve ser possível cadastrar um novo aluguel caso já existe um aberto para o mesmo usuário.
+
 [ ] Não deve ser possível cadastrar um novo aluguel caso já existe um aberto para o mesmo carro.
