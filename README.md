@@ -1,13 +1,9 @@
 <h1 align="center">
   RentX API
-</h1>
-
-
-## :computer: Web preview
-<p align="center">
+  <p align="center">
   <img height="20" src="https://app.travis-ci.com/ellismarjr/rentalx.svg?branch=master">
 </p>
-
+</h1>
 
 <h4 align="center">
   API build with NodeJS with Typescript
