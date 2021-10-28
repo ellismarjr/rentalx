@@ -1,87 +1,56 @@
-# Cadastro de carro
-
-**RF**
-
-[ ] Deve ser possível cadastrar um novo carro.
-
-**RN**
-
-[x] Não deve ser possível cadastrar um carro com uma placa já existente.
-
-[x] Não deve ser possível alterar a placa de um carro já cadastrado.
-
-[x] O carro deve ser cadastrado  por padrão com disponibilidade.
-
-[x] O usuário responsável pelo cadastro deve ser um usuário administrador.
+<h1 align="center">
+  RentX API
+</h1>
 
 
-# Listagem de carros
-
-**RF**
-
-[ ] Deve ser possível listar todos os carros disponíveis.
-
-[ ] Deve ser possível listar todos os carros disponíveis pelo nome da categoria.
-
-[ ] Deve ser possível listar todos os carros disponíveis pelo nome da marca.
-
-[ ] Deve ser possível listar todos os carros disponíveis pelo nome do carro.
-
-**RN**
-
-[ ] O usuário não precisa estar logado no sistema.
+## :computer: Web preview
+<p align="center">
+  <img height="20" src="https://app.travis-ci.com/ellismarjr/rentalx.svg?branch=master">
+</p>
 
 
-# Cadastro de Especificação no carro
+<h4 align="center">
+  API build with NodeJS with Typescript
+</h4>
 
-**RF**
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-[ ] Deve ser possível cadastrar uma especificação para um carro.
+## :rocket: Technologies
 
-[ ] Deve ser possível listar todas as especificações
+This project was developed in the studies purpose with the following technologies:
 
-[ ] Deve ser possível listar todos os carros
+- [Typescript](https://www.typescriptlang.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [SOLID]()
+- [Jest](https://jestjs.io/pt-BR/)
+- [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
+- [csv-parse](https://csv.js.org/parse/)
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+- [swagger](https://swagger.io/)
 
-**RN**
+## :information_source: How To Use
 
-[ ] Não deve ser possível cadastrar uma especificação para um carro não cadastrado.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Yarn v1.22.4](https://yarnpkg.com/) or higher installed on your computer. From your command line:
 
-[ ] Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.
+```bash
+# Download postgres DB
+$ docker run --name rentx -e POSTGRES_DB=rentx -e POSTGRES_PASSWORD=rentx -p 5432:5432 -d rentx
 
-[ ] O usuário responsável pelo cadastro deve ser um usuário administrador.
+# Clone this repository
+$ git clone https://github.com/ellismarjr/rentalx.git
 
+# Go into the repository
+$ cd rentalx
 
-# Cadastro de imagens do carro
+# Install dependencies
+$ yarn
 
+# Run server
+$ yarn dev
 
-**RF**
-
-[ ] Deve ser possível cadastrar a imagem do carro.
-
-[ ] Deve ser possível listar todos os carros.
-
-**RNF**
-
-[ ] Utilizar o multer para upload dos arquivos.
-
-**RN**
-
-[ ] O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
+```
 
 
-[ ] O usuário responsável pelo cadastro deve ser um usuário administrador.
-
-
-# Aluguel de carro
-
-**RF**
-
-[ ] Deve ser possível cadastrar um aluguel
-
-**RN**
-
-[ ] O aluguel deve ter duração mínima de 24 hora.
-
-[ ] Não deve ser possível cadastrar um novo aluguel caso já existe um aberto para o mesmo usuário.
-
-[ ] Não deve ser possível cadastrar um novo aluguel caso já existe um aberto para o mesmo carro.
